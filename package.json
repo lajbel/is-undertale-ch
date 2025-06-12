@@ -1,0 +1,59 @@
+{
+  "name": "is-undertale-ch",
+  "version": "1.0.0",
+  "description": "A undertale character name detector",
+  "type": "module",
+  "main": "./dist/index.mjs",
+  "types": "dist/types/main.d.ts",
+  "scripts": {
+    "build": "pnpm run build:lib && pnpm run build:types",
+    "build:lib": "node --experimental-strip-types --no-warnings scripts/build.ts",
+    "build:types": "tsc --declaration --emitDeclarationOnly --outDir dist/types src/main.ts",
+    "dprint": "dprint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lajbel/is-undertale-ch.git"
+  },
+  "keywords": [
+    "undertale",
+    "game",
+    "fun"
+  ],
+  "author": "lajbel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lajbel/is-undertale-ch/issues"
+  },
+  "homepage": "https://github.com/lajbel/is-undertale-ch#readme",
+  "packageManager": "pnpm@10.8.1+sha512.c50088ba998c67b8ca8c99df8a5e02fd2ae2e2b29aaf238feaa9e124248d3f48f9fb6db2424949ff901cffbb5e0f0cc1ad6aedb602cd29450751d11c35023677",
+  "devDependencies": {
+    "@types/node": "^24.0.1",
+    "dprint": "^0.50.0",
+    "esbuild": "^0.25.5",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "dependencies": {
+    "is-undertale-ch": "link:"
+  },
+  "ava": {},
+  "maintainers": [
+    {
+      "name": "lajbel",
+      "email": "lajbelms@gmail.com",
+      "url": "https://github.com/lajbel"
+    },
+    {
+      "name": "Amy",
+      "email": "amysparkng@gmail.com",
+      "url": "https://github.com/amyspark-ng"
+    }
+  ],
+  "files": [
+    "dist",
+    "README.md"
+  ]
+}
