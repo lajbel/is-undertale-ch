@@ -1,6 +1,6 @@
 {
   "name": "is-undertale-ch",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A undertale character name detector",
   "type": "module",
   "main": "./dist/index.mjs",
